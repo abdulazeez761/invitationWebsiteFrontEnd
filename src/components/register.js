@@ -14,7 +14,7 @@ const day = String(currentDate.getDate()).padStart(2, '0');
 const formattedDateTime = `${year}-${month}-${day}`;
 const QRCodeGenerator = () => {
     const user = useSelector(state => state.user);
-    console.log(user)
+   
     const [userInfo, setUserInfo] = useState({
         name: '',
         email: '',
@@ -87,7 +87,7 @@ const QRCodeGenerator = () => {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+           
                 setUserInfo({
                     name: '',
                     email: '',
