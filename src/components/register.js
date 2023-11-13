@@ -78,7 +78,7 @@ const QRCodeGenerator = () => {
 
         // If the form is valid, proceed with API call
         setwating(true);
-        await fetch('http://localhost:3001/generateQRCode', {
+        await fetch('https://inviterwebsitebackend-production.up.railway.app/generateQRCode', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
