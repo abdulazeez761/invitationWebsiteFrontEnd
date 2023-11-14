@@ -166,7 +166,7 @@ const QRCodeGenerator = () => {
                 <div className='flex items-start justify-around flex-wrap '>
 
                     <div className='w-[59%]'>
-                        <p className='text-[17px] text-gray-900 dark:text-black  '> Dears Guests, <br /> <br />
+                        <p className='text-[17px] text-gray-900 dark:text-black  '> Dears, <br /> <br />
                             Welcome to VIENNA Advantage Launch Event hosted by Vienna Advantage Arabia! We are absolutely delighted to have you with us on<strng className="font-bold"> Sunday, November 26, 08:00 AM –03:15 PM. </strng>  Your presence adds immense value and significance to this occasion. <br /> <br />
                             As you step into our world, we hope you feel the warmth of our hospitality and the excitement that fills the air. This event hasbeen crafted with precision and passion, aiming to inspire, connect, and create lasting impressions. <br /> <br />
                             Your participation is not just a moment in our timeline; it's an essential part of our story. Your insights, experiences, andinteractions will color this event and make it truly memorable. <br /> <br />
