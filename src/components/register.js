@@ -14,7 +14,7 @@ const day = String(currentDate.getDate()).padStart(2, '0');
 const formattedDateTime = `${year}-${month}-${day}`;
 const QRCodeGenerator = () => {
     const user = useSelector(state => state.user);
-   
+
     const [userInfo, setUserInfo] = useState({
         name: '',
         email: '',
@@ -32,13 +32,10 @@ const QRCodeGenerator = () => {
         JobTitle: '',
         phone: '',
     });
+    const [resEroor, setResErrpr] = useState(false)
     const dispatch = useDispatch();
     const generateQRCode = async () => {
-        dispatch(login({
-            name: userInfo.name,
-            email: userInfo.email,
-            loggedIn: true,
-        }))
+
         // Validate form fields
         const validationErrors = {};
         let isValid = true;
@@ -78,7 +75,7 @@ const QRCodeGenerator = () => {
 
         // If the form is valid, proceed with API call
         setwating(true);
-        await fetch('https://inviterwebsitebackend-production.up.railway.app/generateQRCode', {
+        await fetch('http://localhost:3001/generateQRCode', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -87,7 +84,7 @@ const QRCodeGenerator = () => {
         })
             .then((response) => response.json())
             .then((data) => {
-           
+                console.log(data);
                 setUserInfo({
                     name: '',
                     email: '',
@@ -102,13 +99,23 @@ const QRCodeGenerator = () => {
                     JobTitle: '',
                     phone: '',
                 });
+
                 setSubmited(true);
                 setwating(false);
             })
             .catch((error) => {
-                console.log(error);
+                setResErrpr(true)
+                console.log(error)
                 setwating(false);
             });
+
+        if (resEroor == false) {
+            dispatch(login({
+                name: userInfo.name,
+                email: userInfo.email,
+                loggedIn: true,
+            }))
+        }
     };
 
     const handleChange = (e) => {
