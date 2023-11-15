@@ -133,39 +133,9 @@ const QRCodeGenerator = () => {
                     <p className="mb-8  lg:mt-20 md:mt-7 text-lg font-normal text-white md:text-[17px]  lg:text-[20px] mx-tablet:text-[15px]  ">
                         Here at Vienna Advantage Arabia, we focus on one unified business management suite supporting your transformation towards an intelligent enterprise.
                     </p>
-                    // <div className="lg:mt-20 md:mt-7  space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                    //     <a
-                    //         href="#"
-                    //         className="inline-flex justify-center items-center py-4 px-20 text-base 
-                    //         font-bold
-                    //         text-center
-                    //       text-black  
-                    //         rounded-lg bg-white hover:bg-gray-400 
-                    //       focus:ring-blue-300 "
-                    //     >
-                    //         Get started
-                    //         <svg
-                    //             className="w-3.5 h-3.5 ml-2  text-blue-800"
-                    //             aria-hidden="true"
-                    //             xmlns="http://www.w3.org/2000/svg"
-                    //             fill="none"
-                    //             viewBox="0 0 14 10"
-                    //         >
-                    //             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 5h12m0 0L9 1m4 4L9 9" />
-                    //         </svg>
-                    //     </a>
-                    //     <a
-                    //         href="#"
-                    //         className="inline-flex justify-center items-center py-4 px-20 text-base 
-                    //         font-bold
-                    //         text-center
-                    //       text-black  
-                    //         rounded-lg bg-white hover:bg-gray-400 
-                    //       focus:ring-blue-300 "
-                    //     >
-                    //         Learn more
-                    //     </a>
-                    // </div>
+                    <div className="lg:mt-20 md:mt-7  space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                        
+                    </div>
                 </div>
             </section >
 
